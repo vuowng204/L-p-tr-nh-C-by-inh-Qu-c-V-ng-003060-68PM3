@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|c:\\users\\admin\\onedrive - huce\\desktop\\new folder (6)\\vuongdqaprojectc#\\vuongdqaprojectc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|solutionrelative:vuongdqaprojectc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\vuongdqaprojectc#\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|solutionrelative:vuongdqaprojectc#\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|c:\\users\\admin\\onedrive - huce\\desktop\\new folder (6)\\vuongdqaprojectc#\\vuongdqaprojectc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|solutionrelative:vuongdqaprojectc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|c:\\users\\admin\\onedrive - huce\\desktop\\new folder (6)\\vuongdqaprojectc#\\vuongdqaprojectc#\\thongtinsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|solutionrelative:vuongdqaprojectc#\\thongtinsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\vuongdqaprojectc#\\thongtinsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|solutionrelative:vuongdqaprojectc#\\thongtinsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\vuongdqaprojectc#\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|solutionrelative:vuongdqaprojectc#\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\vuongdqaprojectc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6E8081-494F-47C2-BDE0-3ED17CE75E0D}|VuongdqaProjectC#\\VuongdqaProjectC#.csproj|solutionrelative:vuongdqaprojectc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 303,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Form1.cs",
+              "RelativeDocumentMoniker": "VuongdqaProjectC#\\Form1.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Form1.cs [Design]",
+              "RelativeToolTip": "VuongdqaProjectC#\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T04:29:56.047Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Form1.cs",
+              "RelativeDocumentMoniker": "VuongdqaProjectC#\\Form1.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Form1.cs",
+              "RelativeToolTip": "VuongdqaProjectC#\\Form1.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T04:33:01.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dangnhap.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Dangnhap.cs",
+              "RelativeDocumentMoniker": "VuongdqaProjectC#\\Dangnhap.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Dangnhap.cs",
+              "RelativeToolTip": "VuongdqaProjectC#\\Dangnhap.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA1wBgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T23:50:32.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dangnhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Dangnhap.cs",
+              "RelativeDocumentMoniker": "VuongdqaProjectC#\\Dangnhap.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Dangnhap.cs [Design]",
+              "RelativeToolTip": "VuongdqaProjectC#\\Dangnhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T23:45:45.699Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Program.cs",
+              "RelativeDocumentMoniker": "VuongdqaProjectC#\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\Program.cs",
+              "RelativeToolTip": "VuongdqaProjectC#\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T23:43:56.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ThongtinSV.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\ThongtinSV.cs",
+              "RelativeDocumentMoniker": "VuongdqaProjectC#\\ThongtinSV.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\ThongtinSV.cs",
+              "RelativeToolTip": "VuongdqaProjectC#\\ThongtinSV.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAjwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T23:38:22.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThongtinSV.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\ThongtinSV.cs",
+              "RelativeDocumentMoniker": "VuongdqaProjectC#\\ThongtinSV.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - HUCE\\Desktop\\New folder (6)\\VuongdqaProjectC#\\VuongdqaProjectC#\\ThongtinSV.cs [Design]",
+              "RelativeToolTip": "VuongdqaProjectC#\\ThongtinSV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T23:35:47.76Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

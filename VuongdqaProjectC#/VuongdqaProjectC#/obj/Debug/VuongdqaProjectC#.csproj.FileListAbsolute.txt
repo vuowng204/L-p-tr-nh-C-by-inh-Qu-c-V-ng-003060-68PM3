@@ -1,0 +1,12 @@
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\bin\Debug\VuongdqaProjectC#.exe.config
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\bin\Debug\VuongdqaProjectC#.exe
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\bin\Debug\VuongdqaProjectC#.pdb
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC#.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC_.ThongtinSV.resources
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC_.Properties.Resources.resources
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC#.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC#.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC#.exe
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC#.pdb
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC#.exe.config
+C:\Users\Admin\OneDrive - HUCE\Desktop\New folder (6)\VuongdqaProjectC#\VuongdqaProjectC#\obj\Debug\VuongdqaProjectC_.Dangnhap.resources
