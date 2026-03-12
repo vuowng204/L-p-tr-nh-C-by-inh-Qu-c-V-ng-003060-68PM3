@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VuongdqaProjectC_
 {
-    public partial class Form1 : Form
+    public partial class QuanLySV : Form
     {
-        public Form1()
+        public QuanLySV()
         {
             InitializeComponent();
         }

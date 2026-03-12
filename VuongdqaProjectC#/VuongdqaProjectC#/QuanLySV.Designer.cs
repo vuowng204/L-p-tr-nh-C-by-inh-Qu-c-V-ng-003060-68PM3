@@ -1,6 +1,6 @@
 ﻿namespace VuongdqaProjectC_
 {
-    partial class Form1
+    partial class QuanLySV
     {
         /// <summary>
         /// Required designer variable.
