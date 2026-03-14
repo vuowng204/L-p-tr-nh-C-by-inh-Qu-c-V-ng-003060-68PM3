@@ -28,35 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txb_Hovaten = new System.Windows.Forms.TextBox();
+            this.txb_Mssv = new System.Windows.Forms.TextBox();
+            this.txb_Lop = new System.Windows.Forms.TextBox();
+            this.dt_Ngaysinh = new System.Windows.Forms.DateTimePicker();
+            this.btn_Them = new System.Windows.Forms.Button();
+            this.btn_Sua = new System.Windows.Forms.Button();
+            this.btn_Xoa = new System.Windows.Forms.Button();
+            this.btn_Update = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txb_Timkiem = new System.Windows.Forms.TextBox();
+            this.btn_TImkiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(395, 79);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(641, 372);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -69,64 +58,6 @@
             this.label1.Text = "Họ và tên";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(15, 320);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 49);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(183, 320);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 49);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(183, 402);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 49);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Cập Nhật";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(19, 402);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 49);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Xóa";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(15, 45);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(333, 22);
-            this.textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(15, 106);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(333, 22);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -138,15 +69,6 @@
             this.label2.Text = "MSSV";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(15, 183);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(333, 22);
-            this.textBox3.TabIndex = 10;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -157,14 +79,6 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Lớp";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(15, 258);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(351, 22);
-            this.dateTimePicker1.TabIndex = 11;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label4
             // 
@@ -186,43 +100,131 @@
             this.label5.Text = "Tìm kiếm";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox4
+            // txb_Hovaten
             // 
-            this.textBox4.Location = new System.Drawing.Point(468, 45);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(485, 22);
-            this.textBox4.TabIndex = 14;
+            this.txb_Hovaten.Location = new System.Drawing.Point(18, 44);
+            this.txb_Hovaten.Name = "txb_Hovaten";
+            this.txb_Hovaten.Size = new System.Drawing.Size(350, 22);
+            this.txb_Hovaten.TabIndex = 14;
+            this.txb_Hovaten.TextChanged += new System.EventHandler(this.txb_Hovaten_TextChanged);
             // 
-            // button5
+            // txb_Mssv
             // 
-            this.button5.Location = new System.Drawing.Point(961, 44);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "ok!";
-            this.button5.UseVisualStyleBackColor = true;
+            this.txb_Mssv.Location = new System.Drawing.Point(18, 105);
+            this.txb_Mssv.Name = "txb_Mssv";
+            this.txb_Mssv.Size = new System.Drawing.Size(350, 22);
+            this.txb_Mssv.TabIndex = 15;
+            this.txb_Mssv.TextChanged += new System.EventHandler(this.txb_Mssv_TextChanged);
+            // 
+            // txb_Lop
+            // 
+            this.txb_Lop.Location = new System.Drawing.Point(18, 183);
+            this.txb_Lop.Name = "txb_Lop";
+            this.txb_Lop.Size = new System.Drawing.Size(350, 22);
+            this.txb_Lop.TabIndex = 16;
+            // 
+            // dt_Ngaysinh
+            // 
+            this.dt_Ngaysinh.Location = new System.Drawing.Point(18, 256);
+            this.dt_Ngaysinh.Name = "dt_Ngaysinh";
+            this.dt_Ngaysinh.Size = new System.Drawing.Size(350, 22);
+            this.dt_Ngaysinh.TabIndex = 17;
+            this.dt_Ngaysinh.ValueChanged += new System.EventHandler(this.dt_Ngaysinh_ValueChanged);
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Them.Location = new System.Drawing.Point(18, 328);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(100, 50);
+            this.btn_Them.TabIndex = 18;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.UseVisualStyleBackColor = false;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.Location = new System.Drawing.Point(203, 328);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(100, 50);
+            this.btn_Sua.TabIndex = 19;
+            this.btn_Sua.Text = "Sua";
+            this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.BackColor = System.Drawing.Color.Red;
+            this.btn_Xoa.Location = new System.Drawing.Point(21, 414);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(100, 50);
+            this.btn_Xoa.TabIndex = 20;
+            this.btn_Xoa.Text = "Xoá";
+            this.btn_Xoa.UseVisualStyleBackColor = false;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // btn_Update
+            // 
+            this.btn_Update.BackColor = System.Drawing.Color.Yellow;
+            this.btn_Update.Location = new System.Drawing.Point(203, 414);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(100, 50);
+            this.btn_Update.TabIndex = 21;
+            this.btn_Update.Text = "Cập Nhật";
+            this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(395, 73);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(788, 397);
+            this.dataGridView1.TabIndex = 22;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // txb_Timkiem
+            // 
+            this.txb_Timkiem.Location = new System.Drawing.Point(469, 44);
+            this.txb_Timkiem.Name = "txb_Timkiem";
+            this.txb_Timkiem.Size = new System.Drawing.Size(489, 22);
+            this.txb_Timkiem.TabIndex = 23;
+            this.txb_Timkiem.TextChanged += new System.EventHandler(this.txb_Timkiem_TextChanged);
+            // 
+            // btn_TImkiem
+            // 
+            this.btn_TImkiem.Location = new System.Drawing.Point(964, 44);
+            this.btn_TImkiem.Name = "btn_TImkiem";
+            this.btn_TImkiem.Size = new System.Drawing.Size(81, 23);
+            this.btn_TImkiem.TabIndex = 24;
+            this.btn_TImkiem.Text = "ok";
+            this.btn_TImkiem.UseVisualStyleBackColor = true;
+            this.btn_TImkiem.Click += new System.EventHandler(this.btn_TImkiem_Click);
             // 
             // ThongtinSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 487);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox4);
+            this.ClientSize = new System.Drawing.Size(1195, 487);
+            this.Controls.Add(this.btn_TImkiem);
+            this.Controls.Add(this.txb_Timkiem);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_Update);
+            this.Controls.Add(this.btn_Xoa);
+            this.Controls.Add(this.btn_Sua);
+            this.Controls.Add(this.btn_Them);
+            this.Controls.Add(this.dt_Ngaysinh);
+            this.Controls.Add(this.txb_Lop);
+            this.Controls.Add(this.txb_Mssv);
+            this.Controls.Add(this.txb_Hovaten);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThongtinSV";
             this.Text = "Quản Lý Sinh vien";
@@ -234,23 +236,22 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox txb_Hovaten;
+        private System.Windows.Forms.TextBox txb_Mssv;
+        private System.Windows.Forms.TextBox txb_Lop;
+        private System.Windows.Forms.DateTimePicker dt_Ngaysinh;
+        private System.Windows.Forms.Button btn_Them;
+        private System.Windows.Forms.Button btn_Sua;
+        private System.Windows.Forms.Button btn_Xoa;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txb_Timkiem;
+        private System.Windows.Forms.Button btn_TImkiem;
     }
 }
 

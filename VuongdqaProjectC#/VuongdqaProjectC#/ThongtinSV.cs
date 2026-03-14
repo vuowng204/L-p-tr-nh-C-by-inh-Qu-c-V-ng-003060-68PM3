@@ -11,10 +11,13 @@ using System.Windows.Forms;
 namespace VuongdqaProjectC_
 {
     public partial class ThongtinSV : Form
-    {
+    {   
+        dbDataContext db=new dbDataContext();
         public ThongtinSV()
         {
             InitializeComponent();
+            var sv=db.Sinh_Viens.ToList();
+            dataGridView1.DataSource = sv;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -65,6 +68,187 @@ namespace VuongdqaProjectC_
         private void ThongtinSV_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+            LoadData();
+            ClearInput();
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txb_Hovaten_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txb_Mssv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dt_Ngaysinh_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            string mssv = txb_Mssv.Text.Trim();
+
+            // 1. Kiểm tra tồn tại
+            var check = db.Sinh_Viens.SingleOrDefault(s => s.MSSV == mssv);
+            if (check != null)
+            {
+                MessageBox.Show("Mã số sinh viên này đã tồn tại!", "Thông báo");
+                return;
+            }
+
+            // 2. Thêm mới
+            Sinh_Vien sv = new Sinh_Vien();
+            sv.MSSV = mssv;
+            sv.HoTen = txb_Hovaten.Text;
+            sv.Lop = txb_Lop.Text;
+            sv.NgaySinh = dt_Ngaysinh.Value;
+            sv.IsDeleted = false; // Đánh dấu chưa xóa
+
+            db.Sinh_Viens.InsertOnSubmit(sv);
+            db.SubmitChanges();
+
+            MessageBox.Show("Thêm thành công!");
+            LoadData();
+            ClearInput();
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+            string mssv = txb_Mssv.Text.Trim();
+
+            // Tìm sinh viên (Lưu ý: db phải được khởi tạo ở phạm vi class)
+            var sv = db.Sinh_Viens.SingleOrDefault(s => s.MSSV == mssv);
+
+            if (sv != null)
+            {
+                DialogResult result = MessageBox.Show("Xác nhận sửa?", "Thông báo", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        sv.HoTen = txb_Hovaten.Text;
+                        sv.Lop = txb_Lop.Text;
+
+                        // Dùng .Date để khớp với kiểu Date trong SQL Server
+                        sv.NgaySinh = dt_Ngaysinh.Value.Date;
+
+                        // Lệnh quan trọng nhất
+                        db.SubmitChanges();
+
+                        MessageBox.Show("Cập nhật thành công!");
+
+                        // Sau khi Submit, phải load lại từ Database để Grid cập nhật
+                        LoadData();
+                        ClearInput();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            string mssv = txb_Mssv.Text;
+            var sv = db.Sinh_Viens.SingleOrDefault(s => s.MSSV == mssv);
+
+            if (sv != null)
+            {
+                DialogResult dr = MessageBox.Show("Bạn có muốn xoá sinh viên này?", "Cảnh báo", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes)
+                {
+                    sv.IsDeleted = true; // Xoá mềm
+                    db.SubmitChanges();
+                    LoadData();
+                    ClearInput();
+                }
+            }
+        }
+
+        private void txb_Timkiem_TextChanged(object sender, EventArgs e)
+        {
+            string tuKhoa = txb_Timkiem.Text.Trim();
+
+            // Lọc trực tiếp trên cơ sở dữ liệu
+            var ketQua = db.Sinh_Viens
+                           .Where(s => (s.HoTen.Contains(tuKhoa) || s.MSSV.Contains(tuKhoa))
+                                        && s.IsDeleted != true)
+                           .ToList();
+
+            dataGridView1.DataSource = ketQua;
+
+        }
+
+        private void btn_TImkiem_Click(object sender, EventArgs e)
+        {
+            string tuKhoa = txb_Timkiem.Text.Trim();
+
+            if (string.IsNullOrEmpty(tuKhoa))
+            {
+                // Nếu ô tìm kiếm trống, hiển thị lại toàn bộ danh sách (chưa bị xóa)
+                LoadData();
+            }
+            else
+            {
+                // Tìm kiếm theo Họ tên hoặc MSSV (Sử dụng Contains để tìm kiếm gần đúng)
+                var ketQua = db.Sinh_Viens
+                               .Where(s => (s.HoTen.Contains(tuKhoa) || s.MSSV.Contains(tuKhoa))
+                                            && s.IsDeleted != true)
+                               .ToList();
+
+                dataGridView1.DataSource = ketQua;
+
+                if (ketQua.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy sinh viên nào khớp với từ khóa!", "Thông báo");
+                }
+            }
+        }
+        private void LoadData()
+        {
+            
+            dataGridView1.DataSource = db.Sinh_Viens.Where(s => s.IsDeleted != true).ToList();
+        }
+        private void ClearInput()
+        {
+            txb_Hovaten.Clear();
+            txb_Mssv.Clear();
+            txb_Lop.Clear(); // Giả định bạn đặt tên ô Lớp là txb_Lop
+            dt_Ngaysinh.Value = DateTime.Now;
+            txb_Mssv.ReadOnly = false; // Mở khóa MSSV để thêm mới
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                txb_Mssv.Text = row.Cells["MSSV"].Value.ToString();
+                txb_Hovaten.Text = row.Cells["HoTen"].Value.ToString();
+                txb_Lop.Text = row.Cells["Lop"].Value.ToString();
+                dt_Ngaysinh.Value = Convert.ToDateTime(row.Cells["NgaySinh"].Value);
+
+                txb_Mssv.ReadOnly = true; // Không cho sửa MSSV theo yêu cầu của bạn
+            }
         }
     }
 }

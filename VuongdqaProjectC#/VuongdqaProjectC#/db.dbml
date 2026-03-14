@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SV" Class="dbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-L2DR3LC\SQLEXPRESS;Initial Catalog=SV;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="VuongdqaProjectC_.Properties.Settings" SettingsPropertyName="SVConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Sinh_Vien" Member="Sinh_Viens">
+    <Type Name="Sinh_Vien">
+      <Column Name="MSSV" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lop" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
