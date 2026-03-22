@@ -58,11 +58,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db.dbml</DependentUpon>
     </Compile>
-    <Compile Include="QuanLySV.cs">
+    <Compile Include="QuanLyLop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLySV.Designer.cs">
-      <DependentUpon>QuanLySV.cs</DependentUpon>
+    <Compile Include="QuanLyLop.Designer.cs">
+      <DependentUpon>QuanLyLop.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongtinSV.cs">
       <SubType>Form</SubType>
@@ -75,8 +75,8 @@
     <EmbeddedResource Include="Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLySV.resx">
-      <DependentUpon>QuanLySV.cs</DependentUpon>
+    <EmbeddedResource Include="QuanLyLop.resx">
+      <DependentUpon>QuanLyLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongtinSV.resx">
       <DependentUpon>ThongtinSV.cs</DependentUpon>

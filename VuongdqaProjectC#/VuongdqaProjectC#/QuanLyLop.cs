@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace VuongdqaProjectC_
 {
-    public partial class QuanLySV : Form
+    public partial class QuanLyLop : Form
     {
       
         dbDataContext db = new dbDataContext();
-        public QuanLySV()
+        public QuanLyLop()
         {
             InitializeComponent();
             

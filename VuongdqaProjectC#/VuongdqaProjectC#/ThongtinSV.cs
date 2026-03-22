@@ -254,7 +254,7 @@ namespace VuongdqaProjectC_
         private void btn_QLL_Click(object sender, EventArgs e)
         {
             // Mở form quản lý (sử dụng form hiện có 'QuanLySV')
-            using (var frm = new QuanLySV())
+            using (var frm = new QuanLyLop())
             {
                 frm.ShowDialog();
             }

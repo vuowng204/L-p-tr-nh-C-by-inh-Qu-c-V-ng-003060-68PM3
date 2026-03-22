@@ -1,6 +1,6 @@
 ﻿namespace VuongdqaProjectC_
 {
-    partial class QuanLySV
+    partial class QuanLyLop
     {
         /// <summary>
         /// Required designer variable.
