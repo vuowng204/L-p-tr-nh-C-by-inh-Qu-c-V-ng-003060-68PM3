@@ -44,6 +44,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txb_Timkiem = new System.Windows.Forms.TextBox();
             this.btn_TImkiem = new System.Windows.Forms.Button();
+            this.btn_QLL = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -204,11 +205,23 @@
             this.btn_TImkiem.UseVisualStyleBackColor = true;
             this.btn_TImkiem.Click += new System.EventHandler(this.btn_TImkiem_Click);
             // 
+            // btn_QLL
+            // 
+            this.btn_QLL.Location = new System.Drawing.Point(1063, 42);
+            this.btn_QLL.Name = "btn_QLL";
+            this.btn_QLL.Size = new System.Drawing.Size(120, 23);
+            this.btn_QLL.TabIndex = 25;
+            this.btn_QLL.Text = "QL Lớp";
+            this.btn_QLL.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_QLL.UseVisualStyleBackColor = true;
+            this.btn_QLL.Click += new System.EventHandler(this.btn_QLL_Click);
+            // 
             // ThongtinSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1195, 487);
+            this.Controls.Add(this.btn_QLL);
             this.Controls.Add(this.btn_TImkiem);
             this.Controls.Add(this.txb_Timkiem);
             this.Controls.Add(this.dataGridView1);
@@ -252,6 +265,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txb_Timkiem;
         private System.Windows.Forms.Button btn_TImkiem;
+        private System.Windows.Forms.Button btn_QLL;
     }
 }
 

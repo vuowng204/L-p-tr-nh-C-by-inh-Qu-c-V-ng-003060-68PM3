@@ -138,6 +138,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label1
             // 
@@ -148,6 +149,7 @@
             this.label1.Size = new System.Drawing.Size(57, 16);
             this.label1.TabIndex = 17;
             this.label1.Text = "Tên Lớp";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 
@@ -189,7 +191,7 @@
             this.label4.Text = "Số Sinh viên";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // Form1
+            // QuanLySV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +211,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "QuanLySV";
             this.Text = "Quản Lý lớp";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

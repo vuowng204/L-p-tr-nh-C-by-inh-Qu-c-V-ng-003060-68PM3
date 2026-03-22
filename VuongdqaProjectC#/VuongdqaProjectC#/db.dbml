@@ -7,6 +7,15 @@
       <Column Name="Lop" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="QuanlyLop_Sinh_Vien" Member="QuanlyLop" ThisKey="Lop" OtherKey="Lop" Type="QuanlyLop" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuanlyLop" Member="QuanlyLops">
+    <Type Name="QuanlyLop">
+      <Column Name="Lop" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaLop" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SoSinhVien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="QuanlyLop_Sinh_Vien" Member="Sinh_Viens" ThisKey="Lop" OtherKey="Lop" Type="Sinh_Vien" />
     </Type>
   </Table>
 </Database>

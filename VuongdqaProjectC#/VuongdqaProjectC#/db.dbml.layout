@@ -2,11 +2,24 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="db">
   <DataContextMoniker Name="/dbDataContext" />
   <nestedChildShapes>
-    <classShape Id="b7cd7a59-238e-48d8-825c-d54a03fec43c" absoluteBounds="3.125, 1.25, 2, 1.7708968098958331">
+    <classShape Id="b7cd7a59-238e-48d8-825c-d54a03fec43c" absoluteBounds="1.375, 1.125, 2, 1.7708968098958331">
       <DataClassMoniker Name="/dbDataContext/Sinh_Vien" />
       <nestedChildShapes>
-        <elementListCompartment Id="f40a2730-65d9-4db7-b097-573c16f9f05d" absoluteBounds="3.14, 1.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="f40a2730-65d9-4db7-b097-573c16f9f05d" absoluteBounds="1.3900000000000001, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="60c5d726-4bcd-4538-b176-18f54d7a0625" absoluteBounds="4.375, 1.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/dbDataContext/QuanlyLop" />
+      <nestedChildShapes>
+        <elementListCompartment Id="43fadae1-8798-4b99-8fa4-620e7a1408e6" absoluteBounds="4.39, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 2.19314697265625); (3.375 : 2.19314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbDataContext/QuanlyLop/QuanlyLop_Sinh_Vien" />
+      <nodes>
+        <classShapeMoniker Id="60c5d726-4bcd-4538-b176-18f54d7a0625" />
+        <classShapeMoniker Id="b7cd7a59-238e-48d8-825c-d54a03fec43c" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

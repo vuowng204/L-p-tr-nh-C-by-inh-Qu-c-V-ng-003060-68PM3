@@ -33,6 +33,9 @@ namespace VuongdqaProjectC_
     partial void InsertSinh_Vien(Sinh_Vien instance);
     partial void UpdateSinh_Vien(Sinh_Vien instance);
     partial void DeleteSinh_Vien(Sinh_Vien instance);
+    partial void InsertQuanlyLop(QuanlyLop instance);
+    partial void UpdateQuanlyLop(QuanlyLop instance);
+    partial void DeleteQuanlyLop(QuanlyLop instance);
     #endregion
 		
 		public dbDataContext() : 
@@ -72,6 +75,14 @@ namespace VuongdqaProjectC_
 				return this.GetTable<Sinh_Vien>();
 			}
 		}
+		
+		public System.Data.Linq.Table<QuanlyLop> QuanlyLops
+		{
+			get
+			{
+				return this.GetTable<QuanlyLop>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Sinh_Vien")]
@@ -89,6 +100,8 @@ namespace VuongdqaProjectC_
 		private System.Nullable<System.DateTime> _NgaySinh;
 		
 		private System.Nullable<bool> _IsDeleted;
+		
+		private EntityRef<QuanlyLop> _QuanlyLop;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -108,6 +121,7 @@ namespace VuongdqaProjectC_
 		
 		public Sinh_Vien()
 		{
+			this._QuanlyLop = default(EntityRef<QuanlyLop>);
 			OnCreated();
 		}
 		
@@ -162,6 +176,10 @@ namespace VuongdqaProjectC_
 			{
 				if ((this._Lop != value))
 				{
+					if (this._QuanlyLop.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
 					this.OnLopChanging(value);
 					this.SendPropertyChanging();
 					this._Lop = value;
@@ -211,6 +229,40 @@ namespace VuongdqaProjectC_
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QuanlyLop_Sinh_Vien", Storage="_QuanlyLop", ThisKey="Lop", OtherKey="Lop", IsForeignKey=true)]
+		public QuanlyLop QuanlyLop
+		{
+			get
+			{
+				return this._QuanlyLop.Entity;
+			}
+			set
+			{
+				QuanlyLop previousValue = this._QuanlyLop.Entity;
+				if (((previousValue != value) 
+							|| (this._QuanlyLop.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._QuanlyLop.Entity = null;
+						previousValue.Sinh_Viens.Remove(this);
+					}
+					this._QuanlyLop.Entity = value;
+					if ((value != null))
+					{
+						value.Sinh_Viens.Add(this);
+						this._Lop = value.Lop;
+					}
+					else
+					{
+						this._Lop = default(string);
+					}
+					this.SendPropertyChanged("QuanlyLop");
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -229,6 +281,144 @@ namespace VuongdqaProjectC_
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.QuanlyLop")]
+	public partial class QuanlyLop : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _Lop;
+		
+		private string _MaLop;
+		
+		private System.Nullable<int> _SoSinhVien;
+		
+		private EntitySet<Sinh_Vien> _Sinh_Viens;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnLopChanging(string value);
+    partial void OnLopChanged();
+    partial void OnMaLopChanging(string value);
+    partial void OnMaLopChanged();
+    partial void OnSoSinhVienChanging(System.Nullable<int> value);
+    partial void OnSoSinhVienChanged();
+    #endregion
+		
+		public QuanlyLop()
+		{
+			this._Sinh_Viens = new EntitySet<Sinh_Vien>(new Action<Sinh_Vien>(this.attach_Sinh_Viens), new Action<Sinh_Vien>(this.detach_Sinh_Viens));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Lop", DbType="NVarChar(255) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string Lop
+		{
+			get
+			{
+				return this._Lop;
+			}
+			set
+			{
+				if ((this._Lop != value))
+				{
+					this.OnLopChanging(value);
+					this.SendPropertyChanging();
+					this._Lop = value;
+					this.SendPropertyChanged("Lop");
+					this.OnLopChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLop", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string MaLop
+		{
+			get
+			{
+				return this._MaLop;
+			}
+			set
+			{
+				if ((this._MaLop != value))
+				{
+					this.OnMaLopChanging(value);
+					this.SendPropertyChanging();
+					this._MaLop = value;
+					this.SendPropertyChanged("MaLop");
+					this.OnMaLopChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoSinhVien", DbType="Int")]
+		public System.Nullable<int> SoSinhVien
+		{
+			get
+			{
+				return this._SoSinhVien;
+			}
+			set
+			{
+				if ((this._SoSinhVien != value))
+				{
+					this.OnSoSinhVienChanging(value);
+					this.SendPropertyChanging();
+					this._SoSinhVien = value;
+					this.SendPropertyChanged("SoSinhVien");
+					this.OnSoSinhVienChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QuanlyLop_Sinh_Vien", Storage="_Sinh_Viens", ThisKey="Lop", OtherKey="Lop")]
+		public EntitySet<Sinh_Vien> Sinh_Viens
+		{
+			get
+			{
+				return this._Sinh_Viens;
+			}
+			set
+			{
+				this._Sinh_Viens.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Sinh_Viens(Sinh_Vien entity)
+		{
+			this.SendPropertyChanging();
+			entity.QuanlyLop = this;
+		}
+		
+		private void detach_Sinh_Viens(Sinh_Vien entity)
+		{
+			this.SendPropertyChanging();
+			entity.QuanlyLop = null;
 		}
 	}
 }
